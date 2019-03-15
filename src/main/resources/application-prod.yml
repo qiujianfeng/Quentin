@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  
+name: 小明
+age: 25
+content: "姓名:${name}，年龄:${age}。"
+
+person:
+  name: 小华
+  age: 18
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.0.91.23:3306/dbperson?autoReconnect=true&useSSL=false&characterEncoding=utf-8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
